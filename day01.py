@@ -29,3 +29,49 @@ print num_priors
 #1144
 #230
 # (was comparing input_str[0] of str type and prior of int type - needed to cast str)
+
+
+
+#next step!
+
+#test input
+#input_str = '12131415'
+#1213
+#1415
+#answer = 4
+
+step = 1
+str_len = len(input_str)
+if str_len % 2:
+    print "Odd-numbered input, fail!"
+    exit()
+
+sum_priors = 0
+num_priors = 0
+step = str_len / 2
+print '--------'
+#print str_len
+#print step
+for i in range(0,str_len-1):
+    if i > step-1 and step > 0:
+        step *= -1
+    ii = int(input_str[i])
+    stepped = int(input_str[i+step])
+    if ii == stepped:
+        sum_priors += ii
+        num_priors += 1
+#        print "{} {}:{}, {} == {}".format(step, i,i+step,ii,stepped)
+print sum_priors
+print num_priors
+
+#too high! - was using index to add instead of matched digit
+#260494
+#236
+
+#too low - had removed the step*-1 bit - use test example to prove that matching is circular / repeated
+#597
+#118
+
+# just right! 
+#1194
+#236
