@@ -6,8 +6,6 @@
 
 #part 1 = how many moves to center in grid system
 
-# find square size
-
 import math
 
 def find_square_size(i):
