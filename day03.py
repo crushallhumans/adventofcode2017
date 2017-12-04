@@ -79,6 +79,7 @@ for t in test_set:
 
 
 print '-----'
+print 'second verse! NOWHERE NEAR AS EASY AS THE FIRST'
 print '-----'
 
 def calculate_neighbors(square, steps, previous_arr, current_arr):
