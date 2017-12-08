@@ -1059,3 +1059,6 @@ for i in registers:
 
 print largest_reg
 print highest_val
+
+# largest at end  = 4416
+# highest in proc = 5199
